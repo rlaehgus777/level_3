@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>변수 활용+이벤트와 함수</title>
+    <!-- 웹글꼴 -->
+    <!-- 파비콘 -> 리셋 -> 디자인 -> 스크립트 연결 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/var.css">
+    <script src="./scripts/var.js"></script>
+</head>
+<body>
+    <button onclick="func1()">회원 정보 보기</button>
+    <button onclick="func2()">영화 검색하기</button>
+    <button onclick="laptop_info()">노트북 검색하기</button>
+    <button onclick="trip_info()">여행 정보 검색하기</button>
+    <!-- vs code emmet 기능(태그의 관계에 맞춰서 단축어로 태그를 빠르게 작성하는 기능) -->
+    <!-- 태그 작성 후 tab 키 자동완성 -->
+    <header></header>
+    <a href="#"></a> <!-- 필수속성 자동 -->
+    <img src="#" alt="설명">
+    <video src="#"></video>
+    <input type="password"> <!-- 선택속성은 직접 작성필요 -->
+    <!-- 관계 활용 emmet -->
+    <header>
+        <h1><a href="#"><img src="#" alt="toDo"></a></h1>
+        <div class="right">
+            <a href="#" class="search"><img src="#" alt="검색"></a>
+            <a href="#" class="menu"><img src="#" alt="메뉴"></a>
+        </div>
+    </header>
+    <!-- table id=t1 2행2열 -->
+    <!-- table#t1>tr*2>td*2 -->
+    <!-- table#t1>tr*2>th+td -->
+    <table id="t1">
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- ul.items>li>a>img+span.brand+em.name+span.price -->
+    <ul class="items">
+        <li>
+            <a href="">
+                <img src="" alt="">
+                <span class="brand"></span>
+                <em class="name"></em>
+                <span class="price"></span>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
